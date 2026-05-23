@@ -123,6 +123,12 @@ ${JSON.stringify(tarefa.questoes, null, 2)}
   }
 });
 
+app.get("/", async (req, res) => {
+
+  res.send("API ONLINE");
+
+});
+
 app.listen(3001, () => {
   console.log("IA rodando na porta 3001");
 });
