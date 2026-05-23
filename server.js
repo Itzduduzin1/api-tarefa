@@ -125,7 +125,12 @@ ${JSON.stringify(tarefa.questoes, null, 2)}
 
 app.get("/", async (req, res) => {
 
-  res.send("API ONLINE");
+  res.json({
+    ok: true,
+    status: "online",
+    api: "Sun API",
+    version: "1.0.0"
+  });
 
 });
 
